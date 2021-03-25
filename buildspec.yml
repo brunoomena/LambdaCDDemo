@@ -2,7 +2,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      python: 3.8
+      python: 3.x
     commands:
       - aws cloudformation package --template-file samTemplate.yaml --s3-bucket bruno-test-bucket-codepipeline --output-template-file outputSamTemplate.yaml
 artifacts:
